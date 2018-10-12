@@ -12,7 +12,8 @@ def long_planeteer_calls(calls)
   calls.any? {|word|word.size > 4}
 end
 
-def find_the_cheese(cheese)
+def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese
+  result = nil
+  array.each{|food| result << food cheese_types.include?(food)}
 end
